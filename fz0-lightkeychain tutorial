@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Dark Site</title>
+  <style>
+    /* Reset some defaults */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #33ff33; /* classic retro green text */
+      font-family: "Courier New", Courier, monospace;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    a {
+      color: #33ff33;
+      text-decoration: none;
+      border-bottom: 1px dotted #33ff33;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #00ff00;
+    }
+
+    h1, h2, h3 {
+      color: #00ff00;
+      margin-bottom: 1rem;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid #33ff33;
+      background-color: #111;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #22aa22;
+    }
+
+    /* Optional retro effect: scan lines */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0px,
+        rgba(0,0,0,0.05) 2px
+      );
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Welcome to the Retro Dark Site</h1>
+      <p>This is a dark, retro-themed website template with a terminal-like aesthetic. Perfect for old-school vibes or hacker-style layouts.</p>
+      <p>Check out <a href="#">some links</a> to explore!</p>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>Everything is green-on-black for that retro look. Add your content here inside bordered sections for a classic 80s computer terminal style.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p>Organize your projects or portfolio in sections like this. Each box looks like a terminal window.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 FlameZI0
+  </footer>
+</body>
+</html>
