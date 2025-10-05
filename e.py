@@ -1,10 +1,11 @@
+#make sure to type "pip install Flask requests" in terminal
+
 from flask import Flask, render_template_string, jsonify, request
 import requests
 import time
 
 app = Flask(__name__)
 
-# You provided this key — using it for both WAQI token and OpenWeatherMap appid
 WAQI_TOKEN = "35e692ca0b6ee561d13029088333b798a0418a8b"
 OWM_KEY = "35e692ca0b6ee561d13029088333b798a0418a8b"
 
@@ -298,3 +299,4 @@ def get_pm25():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
